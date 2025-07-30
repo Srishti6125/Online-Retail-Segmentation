@@ -23,6 +23,22 @@ The aim of this project is to segment customers based on their purchasing behavi
 
 ---
 
+## 🔍 RFM Analysis
+
+Before applying clustering models, **RFM analysis** was done to quantify customer value using three metrics:
+
+| Metric      | Meaning                                                    |
+|-------------|------------------------------------------------------------|
+| **Recency** | How recently a customer made a purchase                    |
+| **Frequency** | How often a customer made purchases                      |
+| **Monetary** | How much money the customer has spent                     |
+
+Each customer was scored on these metrics, and the resulting **RFM scores** were used as inputs for clustering. These features allowed for high-quality segmentation based on actual user behavior and spending patterns.
+
+We also used **quantile-based binning** and **log transformation** to normalize skewed data, making clusters more meaningful and distinguishable.
+
+---
+
 ## 🧾 Summary
 
 This project focuses on customer segmentation using the Online Retail dataset. Through extensive data cleaning, RFM feature engineering, and exploratory data analysis (EDA), we revealed actionable trends and built interpretable customer clusters.
